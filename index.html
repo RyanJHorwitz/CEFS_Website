@@ -2,6 +2,7 @@
 <html>
 	
 <head>
+	<link rel="stylesheet" href="styles.css">
 	<meta charset = "utf-8">
 	<meta name = "author" content = "Ryan J Horwitz">
 	<meta name = "affiliation" content = "Center For Environmental Forensic Science, University of Washington">
@@ -10,72 +11,80 @@
 </head>
 
 <body>
-	
+	<div class = "totalContainer">
 	<!-- NAVBAR CREATION -->
-	<div class = "navbarContainer">
 		<!-- PRIMARY HEADERS -->
-		<ul class = "nav">
-			<img id = "nav-logo" href = "#" alt = "Insert Logo Here">
-			<button><a id = "nav-0" href = "#">Home</a></button>
-			<button><a id = "nav-1" href = "#about">About the Center</a></button>
-			<button><a id = "nav-2" href = "#research">Research Programs</a></button>
-			<button><a id = "nav-3" href = "#outreach">Outreach Programs</a></button>
-			<button><a id = "nav-4" href = "#news">In The News</a></button>	
-			<button><a id = "nav-5" href = "#contact">Contact Us</a></button>
-			<button><a id = "nav-6" href = "#donate">Donate Today</a></button>
-		</ul>
-		<!-- SUB-HEADERS -->
-		<!-- "ABOUT THE CENTER" SUB-HEADERS -->
-		<ul class = "subnav-abo">
-			<a id = "subnav-abo.0" href = "#coExecutiveDirectors">Co-Executive Directors</a>
-			<a id = "subnav-abo.1" href = "#executiveCommittee">Executive Committee</a>
-			<a id = "subnav-abo.2" href = "#uwFaculty">UW Faculty</a>
-			<a id = "subnav-abo.3" href = "#externalFaculty">External Faculty</a>
-			<a id = "subnav-abo.4" href = "#governmentAgencies">Government Agencies</a>
-			<a id = "subnav-abo.5" href = "#nonGovernmentalOrganizations">Non-Governmental Organizations</a>
-			<a id = "subnav-abo.6" href = "#privateSector">Private Sector</a>
-			<a id = "subnav-abo.7" href = "#staff">Staff</a>
-		</ul>
-		<!-- "REASEARCH PROGRAMS" SUB-HEADERS -->
-		<ul class = "subnav-res">
-			<a id = "subnav-res.0" href = "#elephantIvory">Elephant Ivory</a>
-			<a id = "subnav-res.1" href = "#pangolinTrafficking">Pangolin Trafficking</a>
-			<a id = "subnav-res.2" href = "#timberTrade">Timber Trade</a>
-			<a id = "subnav-res.3" href = "#iuuFishing">IUU Fishing</a>
-			<a id = "subnav-res.4" href = "#pathogenResearch">Pathogen Research</a>
-			<a id = "subnav-res.5" href = "#conservationCanines">Conservation Canines</a>
-			<a id = "subnav-res.6" href = "#publications">Publications</a>
-		</ul>
-		<!-- "OUTREACH PROGRAMS" SUB-HEADERS -->
-		<ul class = "subnav-out">
-			<a id = "subnav-out.0" href = "#education">Education</a>
-			<a id = "subnav-out.1" href = "#capacityBuilding">Capacity Building</a>
-		</ul>
-		<!-- DOUBLE-SUB-HEADERS -->
-		<!-- GOVERNMENT AGENCIES DOUBLE-SUB-HEADER -->
-		<ul class = "doublenav-gov">
-			<a id = "doublenav-gov.0" href = "#federalAgencies">Federal Agencies</a>
-			<a id = "doublenav-gov.1" href = "#stateAgencies">State Agencies</a>
-			<a id = "doublenav-gov.2" href = "#internationalAgencies">International Agencies</a>	
-		</ul>
-		<!-- "ELEPHANT IVORY" DOUBLE-SUB-HEADER -->
-		<ul class = "doublenav-ele">
-			<a id = "doublenav-ele.0" href = "#researchSoftware">Research Software</a>
-			<a id = "doublenav-ele.1" href = "#cites">CITES</a>	
-		</ul>
-		<!-- "TIMBER TRADE" DOUBLE-SUB-HEADER -->
-		<ul class = "doublenav-tim">
-			<a id = "doublenav-tim.0" href = "#arborHarbor">Arbor Harbor</a>
-			<a id = "doublenav-tim.1" href = "#xyloTron">XyloTron</a>	
-		</ul>
-		<!-- "CONSERVATION CANINES" DOUBLE-SUB-HEADER -->
-		<ul class = "doublenav-ck9">
-			<a id = "doublenav-ck9.0" href = "#odorDetections">Odor Detections</a>
-			<a id = "doublenav-ck9.1" href = "#trainingFacility">Training Facility</a>
-			<a id = "doublenav-ck9.2" href = "#meetTheDogs">Meet the Dogs</a>
-			<a id = "doublenav-ck9.3" href = "#sponsors">Sponsors</a>	
-		</ul>
-	</div>
+			<div class = "nav">
+				<a><img id = "logo" href = "#" alt = "Insert Logo Here"></a>
+				<a id = "nav-0" href = "#">Home</a>
+				<a id = "nav-1" href = "#about">About the Center</a>
+				<a id = "nav-2" href = "#research">Research Programs</a>
+				<a id = "nav-3" href = "#outreach">Outreach Programs</a>
+				<a id = "nav-4" href = "#news">In The News</a>	
+				<a id = "nav-5" href = "#contact">Contact Us</a>
+				<a id = "nav-6" href = "#donate">Donate Today</a>
+			</div>
+				<!-- SUB-HEADERS -->
+				<div class = "subnav">
+					<!-- "ABOUT THE CENTER" SUB-HEADERS -->
+					<button class = "dropbutton">Button 1</button>
+					<div class = "subnav-abo">
+						<a id = "subnav-abo.0" href = "#coExecutiveDirectors">Co-Executive Directors</a>
+						<a id = "subnav-abo.1" href = "#executiveCommittee">Executive Committee</a>
+						<a id = "subnav-abo.2" href = "#uwFaculty">UW Faculty</a>
+						<a id = "subnav-abo.3" href = "#externalFaculty">External Faculty</a>
+						<a id = "subnav-abo.4" href = "#governmentAgencies">Government Agencies</a>
+						<a id = "subnav-abo.5" href = "#nonGovernmentalOrganizations">Non-Governmental Organizations</a>
+						<a id = "subnav-abo.6" href = "#privateSector">Private Sector</a>
+						<a id = "subnav-abo.7" href = "#staff">Staff</a>
+					</div>
+				<!-- "REASEARCH PROGRAMS" SUB-HEADERS -->
+					<button class = "dropbutton">Button 2</button>
+					<div class = "subnav-res">
+						<a id = "subnav-res.0" href = "#elephantIvory">Elephant Ivory</a>
+						<a id = "subnav-res.1" href = "#pangolinTrafficking">Pangolin Trafficking</a>
+						<a id = "subnav-res.2" href = "#timberTrade">Timber Trade</a>
+						<a id = "subnav-res.3" href = "#iuuFishing">IUU Fishing</a>
+						<a id = "subnav-res.4" href = "#pathogenResearch">Pathogen Research</a>
+						<a id = "subnav-res.5" href = "#conservationCanines">Conservation Canines</a>
+						<a id = "subnav-res.6" href = "#publications">Publications</a>
+					</div>
+				<!-- "OUTREACH PROGRAMS" SUB-HEADERS -->
+					<button class = "dropbutton">Button 3</button>
+					<div class = "subnav-out">
+						<a id = "subnav-out.0" href = "#education">Education</a>
+						<a id = "subnav-out.1" href = "#capacityBuilding">Capacity Building</a>
+					</div>
+				</div>
+		</div>
+
+
+					<!-- DOUBLE-SUB-HEADERS
+					<div class = "doublenav">
+						GOVERNMENT AGENCIES DOUBLE-SUB-HEADER
+						<ul class = "doublenav-gov">
+							<a id = "doublenav-gov.0" href = "#federalAgencies">Federal Agencies</a>
+							<a id = "doublenav-gov.1" href = "#stateAgencies">State Agencies</a>
+							<a id = "doublenav-gov.2" href = "#internationalAgencies">International Agencies</a>	
+						</ul>
+						"ELEPHANT IVORY" DOUBLE-SUB-HEADER
+						<ul class = "doublenav-ele">
+							<a id = "doublenav-ele.0" href = "#researchSoftware">Research Software</a>
+							<a id = "doublenav-ele.1" href = "#cites">CITES</a>	
+						</ul>
+						TIMBER TRADE" DOUBLE-SUB-HEADER
+						<ul class = "doublenav-tim">
+							<a id = "doublenav-tim.0" href = "#arborHarbor">Arbor Harbor</a>
+							<a id = "doublenav-tim.1" href = "#xyloTron">XyloTron</a>	
+						</ul>
+						"CONSERVATION CANINES" DOUBLE-SUB-HEADER
+						<ul class = "doublenav-ck9">
+							<a id = "doublenav-ck9.0" href = "#odorDetections">Odor Detections</a>
+							<a id = "doublenav-ck9.1" href = "#trainingFacility">Training Facility</a>
+							<a id = "doublenav-ck9.2" href = "#meetTheDogs">Meet the Dogs</a>
+							<a id = "doublenav-ck9.3" href = "#sponsors">Sponsors</a>	
+						</ul>
+					</div>  -->
 	
 	<!-- Navbar
 	<header>

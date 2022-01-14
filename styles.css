@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 
+COLOR SCHEME
+rgb(51,0,111) = uw purple; 
+rgb(232,211,162) = uw gold; 
+rgb(145,123,76) = uw metallic gold; 
+any gray tint; 
+white; 
+black 
+*/
+
+.totalContainer {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 20% 40% 40%;
+}
+
+.nav {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto auto;
+	grid-template-rows: auto;
+	grid-column-gap: 0%;
+	justify-items: center;
+	align-items: center;
+	background: rgba(51,0,111,100);
+	overflow: hidden;
+}
+
+#logo {
+	color: white;
+}
+
+[id ^= "nav-"] {
+	display: grid;
+	color: rgb(232,211,162);
+	text-decoration: none;
+	height: 100%;
+	width: 100%;
+	justify-items: center;
+	align-items: center;
+}
+
+[id ^= "nav-"]:hover {
+	color: rgba(51,0,111,100);
+	background-color: rgb(232,211,162);
+}
+
+
+
