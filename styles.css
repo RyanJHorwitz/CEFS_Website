@@ -11,150 +11,6 @@ white;
 black 
 */
 
-/*
-.totalContainer {
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: auto;
-}
-
-.nav {
-	display: grid;
-	grid-row: 1;
-	grid-template-columns: repeat(8, auto);
-	grid-template-rows: auto;
-	grid-column-gap: 0%;
-	justify-items: center;
-	align-items: center;
-	overflow: hidden;
-}
-
-#logo {
-	color: white;
-	background: rgba(51,0,111,100);
-	width: 100%;
-}
-
-[id ^= "nav-"] {
-	display: grid;
-	color: rgb(232,211,162);
-	background: rgba(51,0,111,100);
-	text-decoration: none;
-	height: 100%;
-	width: 100%;
-	justify-items: center;
-	align-items: center;
-}
-
-[id ^= "nav-"]:hover {
-	color: rgba(51,0,111,100);
-	background-color: rgb(232,211,162);
-}
-
-
-#nav-1 + .subnav {
-	display: none;
-}
-
-#nav-1:hover + .subnav {
-	display:grid;
-	grid-row: 2;
-	grid-column: 3;
-	grid-template-rows: repeat(9, auto);
-	background: rgba(255, 255, 255, 1);
-	width: 100%;
-	background-color: rgb(232,211,162);
-} */
-
-
-/*
-.thirdLlevelMenu
-{
-    position: absolute;
-    top: 0;
-    right: -150px;
-    width: 150px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-}
-
-.thirdLevelMenu > li
-{
-    height: 30px;
-    background: #999999;
-}
-
-.thirdLevelMenu > li:hover { background: #CCCCCC; }
-
-.secLevelMenu
-{
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 150px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-}
-
-.secLevelMenu > li
-{
-    position: relative;
-    height: 30px;
-    background: #999999;
-}
-.secLevelMenu > li:hover { background: #CCCCCC; }
-
-.topLevelMenu
-{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.topLevelMenu > li
-{
-    position: relative;
-    float: left;
-    height: 30px;
-    width: 150px;
-    background: #999999;
-}
-.topLevelMenu > li:hover { background: #CCCCCC; }
-
-.topLevelMenu li:hover > ul
-{
-    display: inline;
-}
-
-*/
-
-/* Menu Link Styles */
-
-/* .topLevelMenu a 
-{
-    font: bold 14px Arial, Helvetica, sans-serif;
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 0 0 0 10px;
-
-    display: block;
-    line-height: 30px;
-}
-.toLevelMenu a:hover { color: #000000; }
-
-*/
-
-
-
-
-
-
-
-
 nav{
 	position:relative;
 }
@@ -186,38 +42,29 @@ ul, li {
 	padding: 0 10px 0 10px;
 }
 
-/* Prevents top-menu from shifting when dropdown opens */
+/* Prevents top-menu from shifting when dropdown opens. Aligns dropdown directly below header. Creates word-wrap */
 .secLevelMenu {
 	position:absolute;
 	width: 170px;
 	padding: 0 10px 0 10px;
 	transform:translateX(10px); /* centered first regardless of width*/
     margin-left: -20px;
+	white-space: normal;
 }
 
+/* Increase selectable area for hover */
 .secLevelMenu > li {
 	padding: 5px 0 5px 0;
 }
 
-
+/* Stop displaying dropdowns by default */
 .secLevelMenu {
 	display: none;
 }
 
+/* Stop displaying secondary dropdowns by default */
 .thirdLevelMenu {
 	display: none;
-}
-
-.topLevelMenu > li:hover .secLevelMenu {
-	display:flex;
-	flex-direction: column;
-	position: absolute;
-}
-
-.secLevelMenu:hover {
-	display:flex;
-	flex-direction: column;
-	border: 1px solid red;
 }
 
 /* SELECTS ALL Top LEVEL MENUS (Can add :hover at the end to focus on hovering */
@@ -231,6 +78,38 @@ ul, li {
 /* SELECTS ALL 3nd LEVEL MENUS */
 .thirdLevelMenu > li > a:first-child {
 }
+
+
+/* If we end up opting only for hover, not on-click menus */
+/* On hover over first menu items, display dropdowns as flexboxes 
+.topLevelMenu > li:hover .secLevelMenu {
+	display:flex;
+	flex-direction: column;
+	position: absolute;
+} */
+
+/* When move cursor from first menu to dropdowns, keep dropdowns open 
+.secLevelMenu:hover {
+	display:flex;
+	flex-direction: column;
+	border: 1px solid red;
+}*/
+
+/* If we end up using pure css checkboxes
+label {
+  position: relative;
+  cursor: pointer;
+}
+
+input {
+	display: none;
+}
+
+input:checked~.secLevelMenu {
+  display: block;
+}
+
+*/
 
 /*
 .secLevelMenu:hover > li > a:first-child:hover + .thirdLevelMenu {
