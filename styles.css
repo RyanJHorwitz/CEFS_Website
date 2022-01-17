@@ -149,8 +149,19 @@ black
 */
 
 
+
+
+
+
+
+
 nav{
 	position:relative;
+}
+
+.logo {
+	float: left;
+	padding: 0 100px;
 }
 
 /* Remove list formatting and align second and third level menus under top level menu */
@@ -169,27 +180,47 @@ ul, li {
 
 /* Equally space top menu items */
 .topLevelMenu > li {
-	margin: 0px auto;
+	margin: 0px 35px;
+	border: 1px solid red;
+	white-space: nowrap;
+	padding: 0 10px 0 10px;
 }
 
 /* Prevents top-menu from shifting when dropdown opens */
 .secLevelMenu {
 	position:absolute;
-	width: 300px;
+	width: 170px;
+	padding: 0 10px 0 10px;
+	transform:translateX(10px); /* centered first regardless of width*/
+    margin-left: -20px;
+}
+
+.secLevelMenu > li {
+	padding: 5px 0 5px 0;
 }
 
 
-.secLevelMenu > li > a:first-child {
-	display:none;
+.secLevelMenu {
+	display: none;
 }
 
-.topLevelMenu > li > a:first-child:hover + .secLevelMenu > li > a:first-child {
+.thirdLevelMenu {
+	display: none;
+}
+
+.topLevelMenu > li:hover .secLevelMenu {
 	display:flex;
-	flex-wrap: wrap;
+	flex-direction: column;
+	position: absolute;
 }
 
+.secLevelMenu:hover {
+	display:flex;
+	flex-direction: column;
+	border: 1px solid red;
+}
 
-/* SELECTS ALL Top LEVEL MENUS (Can add :hover at the end to focus on hovering*/
+/* SELECTS ALL Top LEVEL MENUS (Can add :hover at the end to focus on hovering */
 .topLevelMenu > li > a:first-child {
 }
 
@@ -201,4 +232,15 @@ ul, li {
 .thirdLevelMenu > li > a:first-child {
 }
 
+/*
+.secLevelMenu:hover > li > a:first-child:hover + .thirdLevelMenu {
+	display:flex;
+	flex-direction: column;
+	border: 1px solid blue;
+}
 
+.thirdLevelMenu:hover {
+	display: flex;
+	flex-direction: column;
+}
+*/
