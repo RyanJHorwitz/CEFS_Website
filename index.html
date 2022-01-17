@@ -11,7 +11,155 @@
 </head>
 
 <body>
+	
+	<!-- Link to JQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<!-- Link to menu interactivity JS -->
+	<script src="js/menu-close.js"></script>
+	
+	<!-- Navigation Bar -->
+	<nav>
+	<div class = "logo"><img id = "logo" href = "#" alt = "Insert Logo Here"></div>
+	<ul class="topLevelMenu">
+		<li><a href = "#">Home</a></li>
+		<li class = "dropdown">
+			<a>About The Center</a>
+			<ul class = "secLevelMenu">
+				<li><a href = "#coExecutiveDirectors">Co-Executive Directors</a></li>
+				<li><a href = "#executiveCommittee">Executive Committee</a></li>
+				<li><a href = "#uwFaculty">UW Faculty</a></li>
+				<li><a href = "#externalFaculty">External Faculty</a></li>
+				<li>
+					<a href = "#governmentAgencies">Government Agencies</a>
+						<ul class = "thirdLevelMenu">
+							<li><a href = "#federalAgencies">Federal Agencies</a></li>
+							<li><a href = "#stateAgencies">State Agencies</a></li>
+							<li><a href = "#internationalAgencies">International Agencies</a></li>
+						</ul>
+				</li>
+				<li><a href = "#nonGovernmentalOrganizations">Non-Governmental Organizations</a></li>
+				<li><a href = "#privateSector">Private Sector</a></li>
+				<li><a href = "#staff">Staff</a></li>
+			</ul>
+		<li class = "dropdown">
+			<a>Research Programs</a>
+			<ul class = "secLevelMenu">
+				<li>
+					<a href = "#elephantIvory">Elephant Ivory</a>
+					<ul class = "thirdLevelMenu">
+						<li><a href = "#researchSoftware">Research Software</a></li>
+						<li><a href = "#cites">CITES</a></li>
+					</ul>
+				</li>
+				<li><a href = "#pangolinTrafficking">Pangolin Trafficking</a></li>
+				<li>
+					<a href = "#timberTrade">Timber Trade</a>
+					<ul class = "thirdLevelMenu">
+						<li><a href = "#arborHarbor">Arbor Harbor</a></li>
+						<li><a href = "#xyloTron">XyloTron</a></li>
+					</ul>
+				</li>
+				<li><a href = "#iuuFishing">IUU Fishing</a></li>
+				<li><a href = "#pathogenResearch">Pathogen Research</a></li>
+				<li>
+					<a href = "#conservationCanines">Conservation Canines</a>
+					<ul class = "thirdLevelMenu">
+						<li><a href = "#odorDetections">Odor Detections</a></li>
+						<li><a href = "#trainingFacility">Training Facility</a></li>
+						<li><a href = "#meetTheDogs">Meet the Dogs</a></li>
+						<li><a href = "#sponsors">Sponsors</a></li>
+					</ul>
+				</li>
+				<li><a href = "#publications">Publications</a></li>
+			</ul>
+		<li class = "dropdown">
+			<a>Outreach Programs</a>
+			<ul class = "secLevelMenu">
+				<li><a href = "#education">Education</a></li>
+				<li><a href = "#capacityBuilding">Capacity Building</a></li>
+			</ul>
+		</li>
+		<li><a href = "#contact">Contact Us</a></li>
+		<li><a href = "#donate">Donate Today</a></li>
+		</li>
+		</li>
+	</ul>
+	</nav>
+	
+	<!--
+	<nav>
+	<div class = "logo"><img id = "logo" href = "#" alt = "Insert Logo Here"></div>
+	<ul class="topLevelMenu">
+		<li><a href = "#">Home</a></li>
+		<li>
+			<input id="check01" type="checkbox" name="menu"/>
+    		<label for="check01">About The Center</label>
+			<ul class = "secLevelMenu">
+				<li><a href = "#coExecutiveDirectors">Co-Executive Directors</a></li>
+				<li><a href = "#executiveCommittee">Executive Committee</a></li>
+				<li><a href = "#uwFaculty">UW Faculty</a></li>
+				<li><a href = "#externalFaculty">External Faculty</a></li>
+				<li>
+					<a href = "#governmentAgencies">Government Agencies</a>
+						<ul class = "thirdLevelMenu">
+							<li><a href = "#federalAgencies">Federal Agencies</a></li>
+							<li><a href = "#stateAgencies">State Agencies</a></li>
+							<li><a href = "#internationalAgencies">International Agencies</a></li>
+						</ul>
+				</li>
+				<li><a href = "#nonGovernmentalOrganizations">Non-Governmental Organizations</a></li>
+				<li><a href = "#privateSector">Private Sector</a></li>
+				<li><a href = "#staff">Staff</a></li>
+			</ul>
+		<li>
+			<input id="check02" type="checkbox" name="menu"/>
+    		<label for="check02">Research Programs</label>
+			<ul class = "secLevelMenu">
+				<li>
+					<a href = "#elephantIvory">Elephant Ivory</a>
+					<ul class = "thirdLevelMenu">
+						<li><a href = "#researchSoftware">Research Software</a></li>
+						<li><a href = "#cites">CITES</a></li>
+					</ul>
+				</li>
+				<li><a href = "#pangolinTrafficking">Pangolin Trafficking</a></li>
+				<li>
+					<a href = "#timberTrade">Timber Trade</a>
+					<ul class = "thirdLevelMenu">
+						<li><a href = "#arborHarbor">Arbor Harbor</a></li>
+						<li><a href = "#xyloTron">XyloTron</a></li>
+					</ul>
+				</li>
+				<li><a href = "#iuuFishing">IUU Fishing</a></li>
+				<li><a href = "#pathogenResearch">Pathogen Research</a></li>
+				<li>
+					<a href = "#conservationCanines">Conservation Canines</a>
+					<ul class = "thirdLevelMenu">
+						<li><a href = "#odorDetections">Odor Detections</a></li>
+						<li><a href = "#trainingFacility">Training Facility</a></li>
+						<li><a href = "#meetTheDogs">Meet the Dogs</a></li>
+						<li><a href = "#sponsors">Sponsors</a></li>
+					</ul>
+				</li>
+				<li><a href = "#publications">Publications</a></li>
+			</ul>
+		<li>
+			<a href = "#outreach">Outreach Programs</a>
+			<ul class = "secLevelMenu">
+				<li><a href = "#education">Education</a></li>
+				<li><a href = "#capacityBuilding">Capacity Building</a></li>
+			</ul>
+		</li>
+		<li><a href = "#contact">Contact Us</a></li>
+		<li><a href = "#donate">Donate Today</a></li>
+		</li>
+		</li>
+	</ul>
+	</nav>
 
+-->
+	
+	<!--
 	<nav>
 	<div class = "logo"><img id = "logo" href = "#" alt = "Insert Logo Here"></div>
 	<ul class="topLevelMenu">
@@ -79,112 +227,7 @@
 		</li>
 	</ul>
 	</nav>
-	
-	
-	
-	
-	
-	
-	
-	
-	<!--
-	<div class = "totalContainer">
-			<div class = "nav">
-				<img id = "logo" href = "#" alt = "Insert Logo Here">
-				<a id = "nav-0" href = "#">Home</a>
-				<a id = "nav-1" href = "#about">About the Center</a>
-					<div class = "subnav">
-						<a id = "subnav-abo.0" href = "#coExecutiveDirectors">Co-Executive Directors</a>
-						<a id = "subnav-abo.1" href = "#executiveCommittee">Executive Committee</a>
-						<a id = "subnav-abo.2" href = "#uwFaculty">UW Faculty</a>
-						<a id = "subnav-abo.3" href = "#externalFaculty">External Faculty</a>
-						<a id = "subnav-abo.4" href = "#governmentAgencies">Government Agencies</a>
-						<a id = "subnav-abo.5" href = "#nonGovernmentalOrganizations">Non-Governmental Organizations</a>	
-						<a id = "subnav-abo.6" href = "#privateSector">Private Sector</a>
-						<a id = "subnav-abo.7" href = "#staff">Staff</a>
-					</div>
-				<a id = "nav-2" href = "#research">Research Programs</a>	
-				<a id = "nav-3" href = "#outreach">Outreach Programs</a>
-				<a id = "nav-4" href = "#news">In The News</a>	
-				<a id = "nav-5" href = "#contact">Contact Us</a>
-				<a id = "nav-6" href = "#donate">Donate Today</a>
-			</div>
-		-->
-	
-	
-	
-	
-	
-	
-	
-	
-		<!-- 
-					<div class = "subnav-res">
-						<a id = "subnav-res.0" href = "#elephantIvory">Elephant Ivory</a>
-						<a id = "subnav-res.1" href = "#pangolinTrafficking">Pangolin Trafficking</a>
-						<a id = "subnav-res.2" href = "#timberTrade">Timber Trade</a>
-						<a id = "subnav-res.3" href = "#iuuFishing">IUU Fishing</a>
-						<a id = "subnav-res.4" href = "#pathogenResearch">Pathogen Research</a>
-						<a id = "subnav-res.5" href = "#conservationCanines">Conservation Canines</a>
-						<a id = "subnav-res.6" href = "#publications">Publications</a>
-					</div>
-					<button class = "dropbutton">Button 3</button>
-					<div class = "subnav-out">
-						<a id = "subnav-out.0" href = "#education">Education</a>
-						<a id = "subnav-out.1" href = "#capacityBuilding">Capacity Building</a>
-					</div>
-				</div> -->
-
-
-					<!-- DOUBLE-SUB-HEADERS
-					<div class = "doublenav">
-						GOVERNMENT AGENCIES DOUBLE-SUB-HEADER
-						<ul class = "doublenav-gov">
-							<a id = "doublenav-gov.0" href = "#federalAgencies">Federal Agencies</a>
-							<a id = "doublenav-gov.1" href = "#stateAgencies">State Agencies</a>
-							<a id = "doublenav-gov.2" href = "#internationalAgencies">International Agencies</a>	
-						</ul>
-						"ELEPHANT IVORY" DOUBLE-SUB-HEADER
-						<ul class = "doublenav-ele">
-							<a id = "doublenav-ele.0" href = "#researchSoftware">Research Software</a>
-							<a id = "doublenav-ele.1" href = "#cites">CITES</a>	
-						</ul>
-						TIMBER TRADE" DOUBLE-SUB-HEADER
-						<ul class = "doublenav-tim">
-							<a id = "doublenav-tim.0" href = "#arborHarbor">Arbor Harbor</a>
-							<a id = "doublenav-tim.1" href = "#xyloTron">XyloTron</a>	
-						</ul>
-						"CONSERVATION CANINES" DOUBLE-SUB-HEADER
-						<ul class = "doublenav-ck9">
-							<a id = "doublenav-ck9.0" href = "#odorDetections">Odor Detections</a>
-							<a id = "doublenav-ck9.1" href = "#trainingFacility">Training Facility</a>
-							<a id = "doublenav-ck9.2" href = "#meetTheDogs">Meet the Dogs</a>
-							<a id = "doublenav-ck9.3" href = "#sponsors">Sponsors</a>	
-						</ul>
-					</div>  -->
-	
-	<!-- Navbar
-	<header>
-		NAVBAR EXAMPLE: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
-		<div class = "navbarLogo">
-			<a href = '[INSERT CEFS Logo]'><img src = "[folder-path to img file]" alt = "Center for Environmental Forensic Science Logo" style = "width:16px;height:16px;"></a>
-		</div>
-		<div class = "navbarText">
-			<a class = active href = "[Insert Link of Active Page]">[Insert Name of Active Page]</a>
-			<a href = "#[Page 1]">Page 1</a>
-			<a href = "#[Page 2]">Page 2</a>
-			<div class = "dropDown">
-				<button class = "dropButton">Dropdown Button
-					<i class = "[Insert icon name]">[Icon Name]</i>
-					To get icons: https://www.w3schools.com/icons/
-				</button>
-				<div class = "dropContent">
-					<a href = "#[SubPage 1]">SubPage Page 1</a>
-				</div>
-			</div>
-		</div>
-	</header> 
 	-->
-</body>
 	
+	</body>
 </html>
