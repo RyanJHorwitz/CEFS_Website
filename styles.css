@@ -1,23 +1,87 @@
 @charset "utf-8";
 /* CSS Document */
 
-/* 
-COLOR SCHEME
-rgb(51,0,111) = uw purple; 
-rgb(232,211,162) = uw gold; 
-rgb(145,123,76) = uw metallic gold; 
-any gray tint; 
-white; 
-black 
-*/
+/* --------- NAVBAR DESIGN --------- */
+
+/* Boundaries extend all the way to edge of window */
+html {
+	width: 100%;
+}
+
+body {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+/* Top menu color, width, position */
+.topLevelMenu {
+	background: rgba(200, 200, 200 ,0.8);
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	align-items: center;
+	margin: 0;
+}
+
+/* Logo container */
+.logo {
+	font-family: "Outfit", sans-serif;
+	font-size: 1.1em;
+	padding: 0 20px;
+}
+
+/* Top menu item position */
+.topLevelMenu > li {
+	top: 0px;
+	padding: 0px 0px;
+	margin: 0px 1vw; /* Equally space items */
+	white-space: nowrap;
+}
+
+/* Top menu item link formatting */
+.topLevelMenu > li > a {
+	cursor: pointer;
+	padding: 8px 15px;
+	/*border: 1px solid red;*/
+}
+
+/* Color change on hover over top menu item */
+.topLevelMenu > li > a:hover {
+	background: rgba(150, 150, 150, 0.8);
+}
+
+/* Top menu text formatting */
+.topLevelMenu > li > a {
+	color: black;
+	text-decoration: none;
+	font-family: "Outfit", sans-serif;
+	font-size: 1.1em;
+}
+
+/* Secondary menu color and positioning */
+.secLevelMenu {
+	padding: 4px 10px 10px 10px;
+	background: rgba(190, 190, 190, 1);
+	top: 40px;
+	width: 170px;
+	transform:translateX(20px); /* Aligns 2nd menu box to left border of 1st menu box*/
+    margin-left: -20px;
+	white-space: normal;
+	/*border: 1px solid blue;*/
+}
+
+/* Secondary menu text formatting*/
+.secLevelMenu > li > a {
+	text-decoration: none;
+	font-family: "Outfit", sans-serif;
+	font-size: 1em;
+}
+
+/* --------- NAVBAR FUNCTIONALITY --------- */
 
 nav{
 	position:relative;
-}
-
-.logo {
-	float: left;
-	padding: 0 100px;
 }
 
 /* Remove list formatting and align second and third level menus under top level menu */
@@ -32,29 +96,19 @@ ul, li {
 	display: flex;
 	flex-basis: auto;
 	flex-direction: row;
-}
-
-/* Equally space top menu items */
-.topLevelMenu > li {
-	margin: 0px 35px;
-	border: 1px solid red;
-	white-space: nowrap;
-	padding: 0 10px 0 10px;
+	justify-content: flex-start;
 }
 
 /* Prevents top-menu from shifting when dropdown opens. Aligns dropdown directly below header. Creates word-wrap */
 .secLevelMenu {
-	position:absolute;
-	width: 170px;
-	padding: 0 10px 0 10px;
-	transform:translateX(10px); /* centered first regardless of width*/
-    margin-left: -20px;
-	white-space: normal;
+	position: absolute;
 }
 
 /* Increase selectable area for hover */
 .secLevelMenu > li {
-	padding: 5px 0 5px 0;
+	padding: 5px 5px 0;
+	/*border: 1px solid green;*/
+	
 }
 
 /* Stop displaying dropdowns by default */
