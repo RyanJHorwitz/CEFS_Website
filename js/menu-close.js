@@ -17,6 +17,6 @@ $(document).click(function(event) {
   var $target = $(event.target);
   if(!$target.closest('.dropdown').length && 
   $('.dropdown').is(":visible")) {
-    $('.secLevelMenu').hide();
+    $('.secLevelMenu').slideUp("fast");
   }        
 });
