@@ -12,16 +12,19 @@ body {
 	width: 100%;
 	padding: 0;
 	margin: 0;
+	background-image: url("img/bw_elephant.jpg");
+	background-color: #cccccc;
 }
 
 /* Top menu color, width, position */
 .topLevelMenu {
-	background: rgba(200, 200, 200 ,0.8);
+	background: rgba(180, 180, 180 ,0.8);
 	position: fixed;
 	width: 100%;
 	height: 40px;
 	align-items: center;
 	margin: 0;
+	box-shadow: 2px 2px 15px 0px black;
 }
 
 /* Logo container */
@@ -43,12 +46,12 @@ body {
 .topLevelMenu > li > a {
 	cursor: pointer;
 	padding: 8px 15px;
-	/*border: 1px solid red;*/
 }
 
 /* Color change on hover over top menu item */
 .topLevelMenu > li > a:hover {
 	background: rgba(150, 150, 150, 0.8);
+	padding: 9px 15px;
 }
 
 /* Top menu text formatting */
@@ -62,13 +65,17 @@ body {
 /* Secondary menu color and positioning */
 .secLevelMenu {
 	padding: 4px 10px 10px 10px;
-	background: rgba(190, 190, 190, 1);
+	background: rgba(170, 170, 170, 0.8);
 	top: 40px;
 	width: 170px;
-	transform:translateX(20px); /* Aligns 2nd menu box to left border of 1st menu box*/
-    margin-left: -20px;
 	white-space: normal;
+	box-shadow: 1px 5px 5px black;
 	/*border: 1px solid blue;*/
+}
+
+.secLevelMenu > li {
+	position: relative;
+	padding: 6px 6px 3px 6px;
 }
 
 /* Secondary menu text formatting*/
@@ -76,6 +83,10 @@ body {
 	text-decoration: none;
 	font-family: "Outfit", sans-serif;
 	font-size: 1em;
+}
+
+.secLevelMenu > li > a:hover {
+	background: rgba(160, 160, 160, 1);
 }
 
 /* --------- NAVBAR FUNCTIONALITY --------- */
@@ -96,7 +107,7 @@ ul, li {
 	display: flex;
 	flex-basis: auto;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: space-between;
 }
 
 /* Prevents top-menu from shifting when dropdown opens. Aligns dropdown directly below header. Creates word-wrap */
@@ -104,12 +115,20 @@ ul, li {
 	position: absolute;
 }
 
-/* Increase selectable area for hover */
-.secLevelMenu > li {
-	padding: 5px 5px 0;
-	/*border: 1px solid green;*/
-	
+/* EXAMPLE: Increase clickable area of 2nd menu links.  Will do once everything else is formatted properly;
+.secLevelMenu > li > a {
+	/*border: 1px solid green;
 }
+
+.secLevelMenu > li:first-child > a:first-child::before {
+    content: '';
+    position: absolute;
+    width: 270%;
+	height: 89%;
+	margin-top:-5px;
+	margin-left:-15px;
+	background: rgba(255, 0, 0, 0.5)
+} */
 
 /* Stop displaying dropdowns by default */
 .secLevelMenu {
@@ -177,3 +196,5 @@ input:checked~.secLevelMenu {
 	flex-direction: column;
 }
 */
+
+/* Main */
