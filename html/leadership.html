@@ -1,10 +1,195 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
+	<!-- Link to JQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<!-- Link to menu interactivity JS -->
+	<script src="../js/menu-close.js"></script>
+	<!-- Link to gallery filters -->
+	<script src = "../js/leadership-gallery.js"></script>
+	<!-- The Rest -->
+	<link rel="stylesheet" media = "screen and (min-width: 0px)" href="../css/leadership.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+	<meta charset = "utf-8">
+	<meta name = "author" content = "Ryan J Horwitz">
+	<meta name = "affiliation" content = "Center For Environmental Forensic Science, University of Washington">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes it a Responsive Webpage -->
+	<title>Center for Environmental Forensic Science Website</title>
 </head>
 
 <body>
+	
+	<!-- Navigation Bar -->
+	<nav>
+	<ul class="topLevelMenu">
+		<div class = "logo">Center For Environmental Forensic Science</div>
+		<li><a href = "../index.html">Home</a></li>
+		<li class = "dropdown">
+			<a>About</a>
+			<ul class = "secLevelMenu">
+				<li><a href = "#overview">Overview</a></li>
+				<li><a href = "html/leadership.html">Leadership</a></li>
+					<ul class = "thirdLevelMenu">
+						<li><a href = "#coExecutiveDirectors">Co-Executive Directors</a></li>
+						<li><a href = "#boardOfDirectors">Board of Directors</a></li>
+						<li><a href = "#executiveCommittee">Executive Committee</a></li>
+					</ul>
+				<li><a href = "#membership">Membership</a></li>
+					<ul class = "thirdLevelMenu">
+						<li><a href = "#uwFaculty">UW Faculty</a></li>
+						<li><a href = "#externalFaculty">External Faculty</a></li>
+						<li><a href = "#governmentAgencies">Government Agencies</a></li>
+						<li><a href = "#nonGovernmentalOrganizations">Non-Governmental Organizations</a></li>
+						<li><a href = "#privateSector">Private Sector</a></li>
+						<li><a href = "#staff">Staff</a></li>
+					</ul>
+			</ul>
+		<li class = "dropdown">
+			<a>Research</a>
+			<ul class = "secLevelMenu">
+				<li><a href = "#technology">Technology</a></li>
+				<li><a href = "#implementation">Implementation</a></li>
+					<ul class = "thirdLevelMenu">
+						<li><a href = "#elephantIvory">Elephant Ivory</a></li>
+						<li><a href = "#pangolinTrafficking">Pangolin Trafficking</a></li>
+						<li><a href = "#timberTrade">Timber Trade</a></li>
+						<li><a href = "#iuuFishing">IUU Fishing</a></li>
+						<li><a href = "#pathogenResearch">Pathogen Research</a></li>
+						<li><a href = "#conservationCanines">Conservation Canines</a></li>
+					</ul>
+				<li><a href = "#publications">Publications</a></li>
+			</ul>
+		<li class = "dropdown">
+			<a>Education</a>
+			<ul class = "secLevelMenu">
+				<li><a href = "#publicOutreach">Public Outreach</a></li>
+				<li><a href = "#knowledgeTransfer">Knowledge Transfer</a></li>
+				<li><a href = "#environmentalJustice">Environmental Justice</a></li>
+			</ul>
+		</li>
+		<li><a href = "html/contact.html">Contact</a></li>
+		<li><a href = "#donate">Donate</a></li>
+		</li>
+		</li>
+	</ul>
+	</nav>
+
+	<!-- IMAGE GALLERY -->
+	<main>
+		
+		<div class = "container">
+			
+				<ul class = "items">
+					<li class = "category active" data-filter = "all">All</li>
+					<li class = "category" data-filter = "coExecDir">Executive Directors</li>
+					<li class = "category" data-filter = "boardDir">Board of Directors</li>
+					<li class = "category" data-filter = "execComm">Executive Committee</li>
+				</ul>
+			
+			<div class = "gallery">
+				
+				<!-- Co-Executive Directors -->
+				<div class = "image coExecDir">
+					<img src = "../img/Member_Headshots/Co-Executive_Directors/Wasser.jpg" alt = "Dr. Sam Wasser">
+					<div class = "short-bio">
+						<h4>Sam Wasser</h4>
+						<p>Co-Executive Director</p>
+					</div>
+				</div>
+				<div class = "image coExecDir">
+					<img src = "../img/Member_Headshots/Co-Executive_Directors/Hermanson.jpg" alt = "Dr. John C. Hermanson">
+					<div class = "short-bio">
+						<h4>John C. Hermanson</h4>
+						<p>Co-Executive Director</p>
+					</div>
+				</div>
+				
+				<!-- Board of Directors -->
+				<div class = "image boardDir">
+					<img src = "../img/Member_Headshots/Board_of_Directors/Joubert.jpg" alt = "Dereck Joubert">
+					<div class = "short-bio">
+						<h4>Dereck Joubert</h4>
+						<p>Board of Directors</p>
+					</div>
+				</div>
+				<div class = "image boardDir">
+					<img src = "../img/Member_Headshots/Board_of_Directors/Maritz.jpg" alt = "Paul Maritz">
+					<div class = "short-bio">
+						<h4>Paul Maritz</h4>
+						<p>Board of Directors</p>
+					</div>
+				</div>
+				
+				<!-- Executive Committee -->
+				<div class = "image execComm">
+					<img src = "../img/Member_Headshots/Executive_Committee/Cerling.jpg" alt = "Thure Cerling">
+					<div class = "short-bio">
+						<h4>Thrue Cerling</h4>
+						<p>Executive Committee</p>
+					</div>
+				</div>
+				<div class = "image execComm">
+					<img src = "../img/Member_Headshots/Executive_Committee/Dehgan.jpg" alt = "Alex Dehgan">
+					<div class = "short-bio">
+						<h4>Alex Dehgan</h4>
+						<p>Executive Committee</p>
+					</div>
+				</div>
+				<div class = "image execComm">
+					<img src = "../img/Member_Headshots/Executive_Committee/Dunicliff.jpg" alt = "Justin Dunnicliff">
+					<div class = "short-bio">
+						<h4>Justin Dunnicliff</h4>
+						<p>Executive Committee</p>
+					</div>
+				</div>
+				<div class = "image execComm">
+					<img src = "../img/Member_Headshots/Executive_Committee/Gore.jpg" alt = "Meredith Gore">
+					<div class = "short-bio">
+						<h4>Meredith Gore</h4>
+						<p>Executive Committee</p>
+					</div>
+				</div>
+				<div class = "image execComm">
+					<img src = "../img/Member_Headshots/Executive_Committee/Kalron.jpg" alt = "Nir Kalron">
+					<div class = "short-bio">
+						<h4>Nir Kalron</h4>
+						<p>Executive Committee</p>
+					</div>
+				</div>
+				<div class = "image execComm">
+					<img src = "../img/Member_Headshots/Executive_Committee/Starita.jpg" alt = "Lea Starita">
+					<div class = "short-bio">
+						<h4>Lea Starita</h4>
+						<p>Executive Committee</p>
+					</div>
+				</div>
+				<div class = "image execComm">
+					<img src = "../img/Member_Headshots/Executive_Committee/Steig.jpg" alt = "Eric Steig">
+					<div class = "short-bio">
+						<h4>Eric Steig</h4>
+						<p>Executive Committee</p>
+					</div>
+				</div>
+				<div class = "image execComm">
+					<img src = "../img/Member_Headshots/Executive_Committee/Stone.jpg" alt = "Sarah Stone">
+					<div class = "short-bio">
+						<h4>Sarah Stone</h4>
+						<p>Executive Committee</p>
+					</div>
+				</div>
+				<div class = "image execComm">
+					<img src = "../img/Member_Headshots/Executive_Committee/Swalla.jpg" alt = "Billie Swalla">
+					<div class = "short-bio">
+						<h4>Billie Swalla</h4>
+						<p>Executive Committee</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</main>
+
 </body>
 </html>

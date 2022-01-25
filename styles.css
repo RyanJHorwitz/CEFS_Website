@@ -333,6 +333,72 @@ main {
 }
 
 
+
+@media only screen and (max-width: 944px) {
+	.topLevelMenu {
+		background: rgba(30, 30, 30,1);
+		position: fixed;
+		width: 100%;
+		height: 4%;
+		min-height: 40px;
+		max-height: 70px;
+		align-items: center;
+		margin: 0;
+		z-index: 1000;
+	}
+	
+	.logo {
+		display: none;
+	}
+	
+	.topLevelMenu > li {
+		top: 0px;
+		padding: 0px 1.7%;
+		margin: 0px 0; /* Equally space items */
+		white-space: nowrap;
+		justify-content: space-around;
+	}
+}
+
+
+@media only screen and (max-width: 600px) {
+	.bottomButtons {
+		display: flex;
+		position: absolute;
+		justify-content: space-around;
+		margin-top: clamp(100px, 9%, 8%);
+		width: 70%;
+		max-width: 2000px;
+		min-width: 500px;
+		margin-left: 5%;
+		margin-right: 4%;
+		flex-direction: column
+	}
+	
+	.bottomButtons button {
+		padding: 4% 4.5%;
+		margin: 1% 0;
+		font-size: calc(11px + 1.1vw);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* If we end up opting only for hover, not on-click menus */
 /* On hover over first menu items, display dropdowns as flexboxes 
 .topLevelMenu > li:hover .secLevelMenu {
