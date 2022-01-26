@@ -254,15 +254,12 @@ main{
 	visibility:hidden;
 }
 
-[class ^= "popup-overlay-"].active-2 {
-	visibility:visible;
-}
-
-[class ^= "popup-content-"].active-2 {
-	visibility:visible;
+.screenDarken {
+	display: none;
 }
 
 [class ^= "popup-overlay-"].active-2 {
+	visibility:visible;
 	background: white;
     color: black;
     border-radius: 1em;
@@ -270,14 +267,26 @@ main{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-	width: 90%
+	width: 90%;
+	z-index: 101;
 }
 
 [class ^= "popup-content-"].active-2 {
+	visibility:visible;
 	display: flex;
 	padding: 10px;
-	
-	
+	z-index: 102;
+}
+
+.screenDarken.active-3 {
+	display: inherit;
+	background: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
 }
 
 @media only screen and (max-width: 944px) {
