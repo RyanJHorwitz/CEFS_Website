@@ -8,11 +8,11 @@ $(document).ready(function(){
 		let filter = $(this).attr('data-filter');
 
 		if(filter == 'all'){
-			$('.image').show(500);
+			$('.image').show(0);
 		}
 		else{
-			$('.image').not('.'+filter).hide(400);
-			$('.image').filter('.'+filter).show(500);
+			$('.image').not('.'+filter).hide(0);
+			$('.image').filter('.'+filter).show(0);
 		}
 	});
 });

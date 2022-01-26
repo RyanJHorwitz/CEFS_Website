@@ -225,6 +225,7 @@ main{
     object-fit:cover;
 	display: block;
 	float: center;
+	cursor: pointer;
 }
 
 .container .gallery .image .short-bio {
@@ -243,6 +244,41 @@ main{
 	font-size: 100%;
 }
 
+
+/* BIOGRAPHY POPUP */
+[class ^= "popup-overlay-"] {
+	visibility:hidden;
+}
+
+[class ^= "popup-content-"] {
+	visibility:hidden;
+}
+
+[class ^= "popup-overlay-"].active-2 {
+	visibility:visible;
+}
+
+[class ^= "popup-content-"].active-2 {
+	visibility:visible;
+}
+
+[class ^= "popup-overlay-"].active-2 {
+	background: white;
+    color: black;
+    border-radius: 1em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width: 90%
+}
+
+[class ^= "popup-content-"].active-2 {
+	display: flex;
+	padding: 10px;
+	
+	
+}
 
 @media only screen and (max-width: 944px) {
 	.topLevelMenu {

@@ -8,7 +8,7 @@
 				$(".secLevelMenu").slideUp("fast");
 				$(this).find(".secLevelMenu").slideToggle("fast");
 			}
-			// On click: If dropdown is already expanded and click is on same dropdown, collapse edpanded dropdown.
+			// On click: If dropdown is already expanded and click is on same dropdown, collapse expanded dropdown.
 			else{
 				$(".secLevelMenu").slideUp("fast");
 			}
