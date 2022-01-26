@@ -254,15 +254,15 @@ main{
 	visibility:hidden;
 }
 
-[class ^= "popup-overlay-"].active {
+[class ^= "popup-overlay-"].active-2 {
 	visibility:visible;
 }
 
-[class ^= "popup-content-"].active {
+[class ^= "popup-content-"].active-2 {
 	visibility:visible;
 }
 
-[class ^= "popup-overlay-"].active {
+[class ^= "popup-overlay-"].active-2 {
 	background: white;
     color: black;
     border-radius: 1em;
@@ -273,7 +273,7 @@ main{
 	width: 90%
 }
 
-[class ^= "popup-content-"].active {
+[class ^= "popup-content-"].active-2 {
 	display: flex;
 	padding: 10px;
 	
