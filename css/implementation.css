@@ -31,8 +31,7 @@ body {
 	position: fixed;
 	width: 100%;
 	height: 4%;
-	min-height: 40px;
-	max-height: 70px;
+	height: 40px;
 	align-items: center;
 	margin: 0;
 	z-index: 1000;
@@ -154,152 +153,118 @@ ul, li {
 }
 
 /* SIDE-NAVIGATION BAR */
-.sidenav {
-	position: fixed;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	left: 0;
-	height: 100%;
-	min-width: 170px;
-	max-width: 1200px;
-	padding-top: 15px;
-	background: white;
-}
-
-.sidenav a {
-	color: black;
-	text-decoration: none;
-	padding-left: clamp(10px, 5%, 30px);
-	padding-bottom: clamp(10px, 5%, 30px);
-	font-family: sans-serif;
-	font-size: calc(16px + 0.3vw);
-}
-
-.project-areas {
-	background: black;
+main {
 	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	margin-top: 40px;
+}
+
+.contentContainer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	display: flex;
+	align-items: center;
+}
+
+.boxOverlay {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
-	height: 200%;
-	z-index: -10;
-	margin-right: 0px;
+	margin: 0 auto;
+    width: 100%;
+	height: 100%;
+	background: transparent;
 }
 
-.elephant-Container {
+.implementationText {
+	position: relative;
+	width: 100%;
+	max-height: 20%;
+}
+.titleText {
+	position: relative;
+	color: rgba(255, 255, 255, 0.5);
+	text-align: center;
+	font-size: 12vw;
+	font-family: sans-serif;
+	font-weight: 600;
+	top: 0%;
+}
+
+.cardContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.flipCard {
+	position: relative;
+	background: transparent;
+	min-width: 300px;
+	min-height: 300px;
+	width: 29vw;
+	height: 40vh;
+	max-width: 1200px;
+	max-height: 800px;
+	perspective: 1000px;
+	margin-right: 2%;
+	margin-left: 0%;
+	margin-top: 2%;
+}
+
+.flipCard-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transition-delay: 0.2s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flipCard:hover .flipCard-inner {
+	transform: rotateY(180deg);
+}
+
+.flipCard-front, .flipCard-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.flipCard-front {
+	background-color: #bbb;
+	color: black;
+}
+
+.flipCard-back {
+	background-color: #2980b9;
+	color: white;
+	transform: rotateY(180deg)
+}
+
+.spacer {
+	flex-basis: 100%;
+	height: 10vh;
+	max-height: 40px;
+}
+
+.flipCard-front img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.flipCard-front p {
+	position: absolute;
 	background: white;
-	width: 100%;
-	height: 30%;
-	margin: 40px 0 0 20px;
-}
-
-.pangolin-Container {
-	background: white;
-	width: 100%;
-	height: 30%;
-	margin: 10px 0 0 20px;
-}
-
-.timber-Container {
-	background: white;
-	width: 100%;
-	height: 30%;
-	margin: 10px 0 0 20px;
-}
-
-.iuu-Container {
-	background: white;
-	width: 100%;
-	height: 30%;
-	margin: 10px 0 0 20px;
-}
-
-.pathogen-Container {
-	background: white;
-	width: 100%;
-	height: 30%;
-	margin: 10px 0 0 20px;
-}
-
-.ras-Container {
-	background: white;
-	width: 100%;
-	height: 30%;
-	margin: 10px 0 0 20px;
-}
-
-@media only screen and (max-width: 1414px) {
-	[class $= "-Container"] {
-		width: 99.5%;
-	}
-}
-
-@media only screen and (max-width: 1230px) {
-	[class $= "-Container"] {
-		width: 99%;
-	}
-}
-
-@media only screen and (max-width: 1030px) {
-	[class $= "-Container"] {
-		width: 98.5%;
-	}
-}
-
-@media only screen and (max-width: 910px) {
-	[class $= "-Container"] {
-		width: 98%;
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	[class $= "-Container"] {
-		width: 97.5%;
-	}
-}
-
-@media only screen and (max-width: 678px) {
-	[class $= "-Container"] {
-		width: 97%;
-	}
-}
-
-@media only screen and (max-width: 594px) {
-	[class $= "-Container"] {
-		width: 96.5%;
-	}
-}
-
-@media only screen and (max-width: 536px) {
-	[class $= "-Container"] {
-		width: 96%;
-	}
-}
-
-
-@media only screen and (max-width: 944px) {
-	.topLevelMenu {
-		background: rgba(30, 30, 30,1);
-		position: fixed;
-		width: 100%;
-		height: 4%;
-		min-height: 40px;
-		max-height: 70px;
-		align-items: center;
-		margin: 0;
-		z-index: 1000;
-	}
-	
-	.logo {
-		display: none;
-	}
-	
-	.topLevelMenu > li {
-		top: 0px;
-		padding: 0px 1.7%;
-		margin: 0px 0; /* Equally space items */
-		white-space: nowrap;
-		justify-content: space-around;
-	}
+	bottom: -2%;
+	left: 0%;
+	width: 100%
 }
