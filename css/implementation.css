@@ -268,3 +268,29 @@ main {
 	left: 0%;
 	width: 100%
 }
+
+@media only screen and (max-width: 944px) {
+	.topLevelMenu {
+		background: rgba(30, 30, 30,1);
+		position: fixed;
+		width: 100%;
+		height: 4%;
+		min-height: 40px;
+		max-height: 70px;
+		align-items: center;
+		margin: 0;
+		z-index: 1000;
+	}
+	
+	.logo {
+		display: none;
+	}
+	
+	.topLevelMenu > li {
+		top: 0px;
+		padding: 0px 1.7%;
+		margin: 0px 0; /* Equally space items */
+		white-space: nowrap;
+		justify-content: space-around;
+	}
+}
