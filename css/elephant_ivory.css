@@ -1,0 +1,306 @@
+/* CSS Document */
+
+/* Boundaries extend all the way to edge of window */
+html {
+	width: 100%;
+}
+
+body {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: black;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Top menu color, width, position */
+.topLevelMenu {
+	background: rgba(30, 30, 30,1);
+	position: fixed;
+	width: 100%;
+	height: 4%;
+	min-height: 40px;
+	max-height: 70px;
+	align-items: center;
+	margin: 0;
+	z-index: 1000;
+}
+
+/* Logo container */
+.logo {
+	font-family: sans-serif;
+	font-size: calc(7px + 0.8vw);
+	color: white;
+	padding: 0 20px 0 35px;
+	white-space: nowrap;
+}
+
+/* Top menu item position */
+.topLevelMenu > li {
+	top: 0px;
+	padding: 0px 0px;
+	margin: 0px 1vw; /* Equally space items */
+	white-space: nowrap;
+}
+
+/* Top menu item link formatting */
+.topLevelMenu > li > a {
+	cursor: pointer;
+	padding: 9px 15px;
+}
+
+/* Color change on hover over top menu item */
+.topLevelMenu > li > a:hover {
+	background: rgba(80, 70, 70, 1);
+	padding: 9px 15px;
+}
+
+/* Top menu text formatting */
+.topLevelMenu > li > a {
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: calc(7px + 0.8vw);
+}
+
+/* Secondary menu color and positioning */
+.secLevelMenu {
+	padding: 4px 10px 10px 10px;
+	background: rgba(170, 170, 170, 0.8);
+	top: 100%;
+	min-width: 170px;
+	width: 6%;
+	white-space: normal;
+	/*border: 1px solid blue;*/
+}
+
+.secLevelMenu > li {
+	position: relative;
+	padding: 6px 6px 3px 6px;
+}
+
+/* Secondary menu text formatting*/
+.secLevelMenu > li > a {
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: calc(10px + 0.5vw);
+}
+
+.secLevelMenu > li > a:hover {
+	background: rgba(160, 160, 160, 1);
+}
+
+/* --------- NAVBAR FUNCTIONALITY --------- */
+
+nav{
+	position:relative;
+}
+
+/* Remove list formatting and align second and third level menus under top level menu */
+ul, li {
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+/* Place entire menu in a FlexBox and align them horizontally */
+.topLevelMenu {
+	display: flex;
+	flex-basis: auto;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/* Prevents top-menu from shifting when dropdown opens. Aligns dropdown directly below header. Creates word-wrap */
+.secLevelMenu {
+	position: absolute;
+}
+
+/* EXAMPLE: Increase clickable area of 2nd menu links.  Will do once everything else is formatted properly;
+.secLevelMenu > li > a {
+	/*border: 1px solid green;
+}
+
+.secLevelMenu > li:first-child > a:first-child::before {
+    content: '';
+    position: absolute;
+    width: 270%;
+	height: 89%;
+	margin-top:-5px;
+	margin-left:-15px;
+	background: rgba(255, 0, 0, 0.5)
+} */
+
+/* Stop displaying dropdowns by default */
+.secLevelMenu {
+	display: none;
+}
+
+/* Stop displaying secondary dropdowns by default */
+.thirdLevelMenu {
+	display: none;
+}
+
+/* SIDE-NAVIGATION BAR */
+.sidenav {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	left: 0;
+	height: 100%;
+	min-width: 170px;
+	max-width: 1200px;
+	padding-top: 15px;
+	background: white;
+}
+
+.sidenav a {
+	color: black;
+	text-decoration: none;
+	padding-left: clamp(10px, 5%, 30px);
+	padding-bottom: clamp(10px, 5%, 30px);
+	font-family: sans-serif;
+	font-size: calc(16px + 0.3vw);
+}
+
+.project-areas {
+	background: black;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	width: 86.5%;
+	height: 200%;
+	z-index: -10;
+	margin-right: 0px;
+	margin-left: clamp(160px, 8%, 200px);
+}
+
+.elephant-Container {
+	background: white;
+	width: 100%;
+	height: 30%;
+	margin: 40px 0 0 20px;
+}
+
+.pangolin-Container {
+	background: white;
+	width: 100%;
+	height: 30%;
+	margin: 10px 0 0 20px;
+}
+
+.timber-Container {
+	background: white;
+	width: 100%;
+	height: 30%;
+	margin: 10px 0 0 20px;
+}
+
+.iuu-Container {
+	background: white;
+	width: 100%;
+	height: 30%;
+	margin: 10px 0 0 20px;
+}
+
+.pathogen-Container {
+	background: white;
+	width: 100%;
+	height: 30%;
+	margin: 10px 0 0 20px;
+}
+
+.ras-Container {
+	background: white;
+	width: 100%;
+	height: 30%;
+	margin: 10px 0 0 20px;
+}
+
+@media only screen and (max-width: 1414px) {
+	[class $= "-Container"] {
+		width: 96%;
+	}
+}
+
+@media only screen and (max-width: 1230px) {
+	[class $= "-Container"] {
+		width: 93%;
+	}
+}
+
+@media only screen and (max-width: 1030px) {
+	[class $= "-Container"] {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 910px) {
+	[class $= "-Container"] {
+		width: 86%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	[class $= "-Container"] {
+		width: 82%;
+	}
+}
+
+@media only screen and (max-width: 678px) {
+	[class $= "-Container"] {
+		width: 78%;
+	}
+}
+
+@media only screen and (max-width: 594px) {
+	[class $= "-Container"] {
+		width: 74%;
+	}
+}
+
+@media only screen and (max-width: 536px) {
+	[class $= "-Container"] {
+		width: 70%;
+	}
+}
+
+
+@media only screen and (max-width: 944px) {
+	.topLevelMenu {
+		background: rgba(30, 30, 30,1);
+		position: fixed;
+		width: 100%;
+		height: 4%;
+		min-height: 40px;
+		max-height: 70px;
+		align-items: center;
+		margin: 0;
+		z-index: 1000;
+	}
+	
+	.logo {
+		display: none;
+	}
+	
+	.topLevelMenu > li {
+		top: 0px;
+		padding: 0px 1.7%;
+		margin: 0px 0; /* Equally space items */
+		white-space: nowrap;
+		justify-content: space-around;
+	}
+}

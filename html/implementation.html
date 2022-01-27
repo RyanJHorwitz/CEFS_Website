@@ -1,8 +1,12 @@
 <!doctype html>
 <html>
-	
 <head>
-	<link rel="stylesheet" media = "screen and (min-width: 0px)" href="styles.css">
+	<link rel="stylesheet" media = "screen and (min-width: 0px)" href="../css/implementation.css">
+		<!-- Link to JQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<!-- Link to menu interactivity JS -->
+	<script src="../js/menu-close.js"></script>
+	<!-- The Rest -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
@@ -15,16 +19,11 @@
 
 <body>
 	
-	<!-- Link to JQuery -->
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	<!-- Link to menu interactivity JS -->
-	<script src="js/menu-close.js"></script>
-	
 	<!-- Navigation Bar -->
 	<nav>
 	<ul class="topLevelMenu">
 		<div class = "logo">Center For Environmental Forensic Science</div>
-		<li><a href = "#">Home</a></li>
+		<li><a href = "../index.html">Home</a></li>
 		<li class = "dropdown">
 			<a>About</a>
 			<ul class = "secLevelMenu">
@@ -49,7 +48,7 @@
 			<a>Research</a>
 			<ul class = "secLevelMenu">
 				<li><a href = "#technology">Technology</a></li>
-				<li><a href = "html/implementation.html">Implementation</a></li>
+				<li><a href = "#implementation">Implementation</a></li>
 					<ul class = "thirdLevelMenu">
 						<li><a href = "#elephantIvory">Elephant Ivory</a></li>
 						<li><a href = "#pangolinTrafficking">Pangolin Trafficking</a></li>
@@ -76,59 +75,27 @@
 	</nav>
 
 	<main>
-		<!-- Image Slider Start -->
-		<div class = "slider">
-			<div class = "slides">
-				<input type = "radio" name = "radio-btn" id = "radio-1">
-				<input type = "radio" name = "radio-btn" id = "radio-2">
-				<input type = "radio" name = "radio-btn" id = "radio-3">
-				<input type = "radio" name = "radio-btn" id = "radio-4">
-				<div class = "slide first">
-					<img src = "img/bw_elephant.jpg" alt = "">
-				</div>
-				<div class = "slide">
-					<img src = "img/bw_elephant.jpg" alt = "">
-				</div>
-				<div class = "slide">
-					<img src = "img/bw_elephant.jpg" alt = "">
-				</div>
-				<div class = "slide">
-					<img src = "img/bw_elephant.jpg" alt = "">
-				</div>
-			</div>
-			<div class = "navigation-auto">
-				<div class = "auto-btn-1"></div>
-				<div class = "auto-btn-2"></div>
-				<div class = "auto-btn-3"></div>
-				<div class = "auto-btn-4"></div>
-			</div>
-			<div class = "navigation-manual">
-				<label for = "radio-1" class = "manual-btn"></label>
-				<label for = "radio-2" class = "manual-btn"></label>
-				<label for = "radio-3" class = "manual-btn"></label>
-				<label for = "radio-4" class = "manual-btn"></label>
-			</div>
-			<div id = "goal">
-				Advancing strategies and tools to combat transnational environmental crime through multidisciplinary collaboration, education and capacity building in forensic science.
-				<div class = "bottomButtons">
-					<button>About the Center</button>
-					<button>Contact Us</button>
-					<button>Donate Today</button>
-					<div class = "forSpacing">
-					</div>
-				</div>
-			</div>
-			</div>
-		<div class = "bottomBar">
-			Center for Environmental Forensic Science. &#169 2022. All Rights Reserved.
-		</div>
-		<script src = "js/auto-slider.js"></script>
-		<!-- Image Slider End -->
-
 		
+		<div class = "project-areas">
+			<div class = "elephant-Container">
+			
+			</div>
+			<div class = "pangolin-Container">
+			
+			</div>
+			<div class = "timber-Container">
+			
+			</div>
+			<div class = "iuu-Container">
+			
+			</div>
+			<div class = "pathogen-Container">
+				<p>Tracking pathogens: As COVID-19 taught us, pathogens originating in wildlife endanger human, animal and ecosystem health.  “Tackling illicit wildlife trafficking is key to preventing future pandemics stemming from zoonotic pathogens.” (UNODC nd).  Plant disease pathogens associated with illicit timber also place entire ecosystems at risk; the potential devastation can be seen in the history of chestnut blight and Dutch elm disease. In addition, the presence and genomic signature of specific pathogens can provide additional information about the origin and shipping of contraband. <br><br> Global health agencies and organizations, while concerned about the impact of the illegal wildlife trade on pathogen spread, are generally not experienced in enforcement or interdiction. Nor do they have ready access to trafficked samples. Through CEFS our enforcement or interdiction experts can directly interact with experts who can detect and characterize pathogens in wildlife shipments using genomic technology. Together with members from One Health and in transmission of respiratory diseases like flu and COVID-19, we will detect and monitor pathogens in illicit wildlife shipments for the spread of known pathogens; to predict and prevent threats to human, animal, and timber health; and use pathogens as an additional tool in localization of contraband.</p>
+			</div>
+			<div class = "ras-Container">
+			
+			</div>
+		</div>
 	</main>
-	
-	</body>
+</body>
 </html>
-
-<!-- Allen Institute Website for personnel information? -->
