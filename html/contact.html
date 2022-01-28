@@ -1,10 +1,127 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
+	<link rel="stylesheet" media = "screen and (min-width: 0px)" href="../css/contact.css">
+		<!-- Link to JQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<!-- Link to menu interactivity JS -->
+	<script src="../js/menu-close.js"></script>
+	<!-- The Rest -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+	<meta charset = "utf-8">
+	<meta name = "author" content = "Ryan J Horwitz">
+	<meta name = "affiliation" content = "Center For Environmental Forensic Science, University of Washington">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes it a Responsive Webpage -->
+	<title>Center for Environmental Forensic Science Website</title>
 </head>
 
 <body>
+	
+	<!-- Navigation Bar -->
+	<nav>
+	<ul class="topLevelMenu">
+		<div class = "logo">Center For Environmental Forensic Science</div>
+		<li><a href = "../index.html">Home</a></li>
+		<li class = "dropdown">
+			<a>About</a>
+			<ul class = "secLevelMenu">
+				<li><a href = "#overview">Overview</a></li>
+				<li><a href = "../html/leadership.html">Leadership</a></li>
+					<ul class = "thirdLevelMenu">
+						<li><a href = "#coExecutiveDirectors">Co-Executive Directors</a></li>
+						<li><a href = "#boardOfDirectors">Board of Directors</a></li>
+						<li><a href = "#executiveCommittee">Executive Committee</a></li>
+					</ul>
+				<li><a href = "#membership">Membership</a></li>
+					<ul class = "thirdLevelMenu">
+						<li><a href = "#uwFaculty">UW Faculty</a></li>
+						<li><a href = "#externalFaculty">External Faculty</a></li>
+						<li><a href = "#governmentAgencies">Government Agencies</a></li>
+						<li><a href = "#nonGovernmentalOrganizations">Non-Governmental Organizations</a></li>
+						<li><a href = "#privateSector">Private Sector</a></li>
+						<li><a href = "#staff">Staff</a></li>
+					</ul>
+			</ul>
+		<li class = "dropdown">
+			<a>Research</a>
+			<ul class = "secLevelMenu">
+				<li><a href = "#technology">Technology</a></li>
+				<li><a href = "../html/implementation.html">Implementation</a></li>
+					<ul class = "thirdLevelMenu">
+						<li><a href = "#elephantIvory">Elephant Ivory</a></li>
+						<li><a href = "#pangolinTrafficking">Pangolin Trafficking</a></li>
+						<li><a href = "#timberTrade">Timber Trade</a></li>
+						<li><a href = "#iuuFishing">IUU Fishing</a></li>
+						<li><a href = "#pathogenResearch">Pathogen Research</a></li>
+						<li><a href = "#conservationCanines">Conservation Canines</a></li>
+					</ul>
+				<li><a href = "#publications">Publications</a></li>
+			</ul>
+		<li class = "dropdown">
+			<a>Education</a>
+			<ul class = "secLevelMenu">
+				<li><a href = "#publicOutreach">Public Outreach</a></li>
+				<li><a href = "#knowledgeTransfer">Knowledge Transfer</a></li>
+				<li><a href = "#environmentalJustice">Environmental Justice</a></li>
+			</ul>
+		</li>
+		<li><a href = "html/contact.html">Contact</a></li>
+		<li><a href = "#donate">Donate</a></li>
+		</li>
+		</li>
+	</ul>
+	</nav>
+
+	<main>
+		<div class = "pageContents">
+			<div class = "title">
+
+			</div>
+			<div class = "contactInformation">
+
+			</div>
+			<div class = "spacer"></div>
+			<div class = "contactForm">
+				<div class="fcf-body">
+					<div id="fcf-form">
+					<h3 class="fcf-h3">Contact us  using this form</h3>
+					<form id="fcf-form-id" class="fcf-form-class" method="post" action="../php/contact.php">
+						<div class="fcf-form-group">
+							<label for="Name" class="fcf-label">Your name</label>
+							<div class="fcf-input-group">
+								<input type="text" id="Name" name="Name" class="fcf-form-control" required>
+							</div>
+						</div>
+
+						<div class="fcf-form-group">
+							<label for="Email" class="fcf-label">Your email address</label>
+							<div class="fcf-input-group">
+								<input type="email" id="Email" name="Email" class="fcf-form-control" required>
+							</div>
+						</div>
+
+						<div class="fcf-form-group">
+							<label for="Message" class="fcf-label">Your message</label>
+							<div class="fcf-input-group">
+								<textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+							</div>
+						</div>
+
+						<div class="fcf-form-group">
+							<button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+						<div class="fcf-credit" id="fcf-credit">
+							Simple HTML email form provided by
+							<a href="https://www.majesticform.com" target="_blank">MajesticForm</a>
+        				</div>
+						</div>
+					</form>
+					</div>
+				</div>
+			</div>
+			<div class = "spacer"></div>
+		</div>
+	</main>
 </body>
 </html>

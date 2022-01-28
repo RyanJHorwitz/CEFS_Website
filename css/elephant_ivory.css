@@ -205,7 +205,7 @@ main {
 	border-bottom: 1px solid white;
 }
 
-[class ^= "side-"]:hover {
+[class ^= "side-"]:not(.side-elephants):hover {
 	background: rgba(200, 200, 255);
 }
 
@@ -215,7 +215,8 @@ main {
 
 .side-elephants {
 	padding-top: 5%;
-	border-top: 1px solid white
+	border-top: 1px solid white;
+	background: rgba(100, 0, 100, 1)
 }
 
 [class ^= "side-"] a {
@@ -227,7 +228,7 @@ main {
 	font-stretch: expanded;
 }
 
-[class ^= "side-"]:hover a {
+[class ^= "side-"]:not(.side-elephants):hover a {
 	color: black;
 }
 
