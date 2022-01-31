@@ -193,33 +193,64 @@ main {
 	flex-wrap: wrap;
 	width: 100%;
 	height: 100%;
-	background: blue;
+	background: black;
+	justify-content: center;
 }
 
 .title {
+	display: flex;
 	width: 100%;
-	height: 7%;
+	height: 15%;
 	min-height: 40px;
-	background: pink;
+	background: black;
+	color: white;
+	font-family: sans-serif;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: calc(6px + 2vh);
 }
 
 .contactInformation {
-	width: 60%;
-	height: 93%;
-	background: purple;
+	display: flex;
+	width: 40%;
+	height: 75%;
+	background: black;
+	color: white;
+	font-family: sans-serif;
+	justify-content: center;
+	align-items: center;
+	line-height: 1.5;
+	font-size: calc(5px + 2vh);
+	text-align: center;
+}
+
+.contactInformation li {
+	padding: 0 10% 0 10%;
+}
+
+#cefs {
+	margin-bottom: 5%;
+	font-size: calc(8px + 2.4vh);
+	font-weight: 600;
+}
+
+#city {
+	margin-bottom: 5%;
 }
 
 .spacer {
-	width: 5%;
-	background: black
+	width: 30%;
+	background: rgba(50, 50, 50, 0.4);
 }
 
 .contactForm {
-	width: 30%;
-	height: 93%;
+	width: 40%;
+	height: 80%;
 	background: black;
-	overflow-y: scroll;
+	overflow-y: hidden;
 	overflow-x: hidden;
+	padding-bottom: 10%
 }
 
 .contactForm::-webkit-scrollbar {
@@ -240,19 +271,23 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    margin: 0;
+    margin: 0 0;
     font-family: sans-serif;
-    font-size: calc(12px + 0.9vw);
+    font-size: calc(12px + 1.5vh);
     font-weight: 400;
     line-height: 1.5;
     color: white;
     text-align: left;
     background-color: black;
-    padding: 0 0px 0 0px;
+    padding: 0 40px 0 40px;
     padding-bottom: 0px;
 	min-width: 80px;
     max-width: 100%;
 	height: 100%;
+}
+
+.fcf-body #fcf-form .fcf-h3 {
+	text-align: center;
 }
 
 /* Adjusts space between fields */
@@ -276,7 +311,7 @@ main {
     width: 100%;
     height: 2%;
     padding: 0.375vw 0.75vw;
-    font-size: calc(5pt + 0.7vw);
+    font-size: calc(5pt + 1.4vh);
     font-weight: 400;
     line-height: 1.5;
     color: white;
@@ -395,3 +430,272 @@ label.fcf-label {
 input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
     width: 100%;
 }
+
+@media only screen and (max-height: 642px) {
+	
+	.contactInformation {
+		display: flex;
+		width: 40%;
+		height: 55%;
+		background: black;
+		color: white;
+		font-family: sans-serif;
+		justify-content: center;
+		align-items: center;
+		line-height: 1.5;
+		font-size: calc(5px + 2vh);
+		text-align: center;
+		padding-top: 2%
+	}
+
+	.contactForm {
+		width: 40%;
+		height: 90%;
+		background: black;
+		overflow-y: hidden;
+		overflow-x: hidden;
+		padding-bottom: 4%
+	}
+}
+
+@media only screen and (max-height: 570px) {
+	.fcf-form-control {
+		font-size: calc(4pt + 1vh);
+	}
+	
+	.contactInformation {
+		font-size: calc(2px + 2vh);
+	}
+
+	#cefs {
+		font-size: calc(5px + 2.4vh);
+	}
+	
+	
+	.fcf-body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 0;
+		font-family: sans-serif;
+		font-size: calc(5px + 1.5vh);
+		font-weight: 400;
+		line-height: 1.5;
+		color: white;
+		text-align: left;
+		background-color: black;
+		padding: 0 0px 0 0px;
+		padding-bottom: 0px;
+		min-width: 80px;
+		max-width: 100%;
+		height: 100%;
+	}
+	
+	.fcf-btn {
+		display: inline-block;
+		font-weight: 400;
+		color: white;
+		text-align: center;
+		vertical-align: middle;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		background-color: purple;
+		border: 1px solid transparent;
+		padding: 0.375rem 0.75rem;
+		font-size: calc(8px + 1vh);
+		line-height: 1.5;
+		border-radius: 0.25rem;
+		transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	}
+	
+	.fcf-credit {
+		font-size: calc(3px + 1vh);
+		color: #545b62;
+	}
+}
+
+@media only screen and (max-height: 366px) {
+	.fcf-form-control {
+		font-size: calc(2pt + 1vh);
+	}
+	
+	.contactInformation {
+		font-size: calc(1px + 2vh);
+	}
+
+	#cefs {
+		font-size: calc(3px + 2.4vh);
+	}
+	
+	
+	.fcf-body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 0;
+		font-family: sans-serif;
+		font-size: calc(3px + 1.5vh);
+		font-weight: 400;
+		line-height: 1.5;
+		color: white;
+		text-align: left;
+		background-color: black;
+		padding: 0 0px 0 0px;
+		padding-bottom: 0px;
+		min-width: 80px;
+		max-width: 100%;
+		height: 100%;
+	}
+	
+	.fcf-btn {
+		display: inline-block;
+		font-weight: 400;
+		color: white;
+		text-align: center;
+		vertical-align: middle;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		background-color: purple;
+		border: 1px solid transparent;
+		padding: 0.375rem 0.75rem;
+		font-size: calc(5px + 1vh);
+		line-height: 1.5;
+		border-radius: 0.25rem;
+		transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	}
+	
+	.fcf-credit {
+		font-size: calc(1px + 1vh);
+		color: #545b62;
+	}
+}
+
+@media only screen and (max-width: 968px) {
+	.spacer {
+		width: 20%;
+		background: rgba(15, 0, 15, 1);
+	}
+	
+	.contactInformation {
+		display: flex;
+		width: 60%;
+		height: 55%;
+		background: black;
+		color: white;
+		font-family: sans-serif;
+		justify-content: center;
+		align-items: center;
+		line-height: 1.5;
+		font-size: calc(5px + 2vh);
+		text-align: center;
+		padding-top: 2%
+	}
+
+	.contactForm {
+		width: 60%;
+		height: 90%;
+		background: black;
+		overflow-y: hidden;
+		overflow-x: hidden;
+		padding-bottom: 4%
+	}
+	
+}
+
+@media only screen and (max-width: 650px) {
+	.spacer {
+		width: 5%;
+		background: rgba(15, 0, 15, 1);
+	}
+	
+	.contactInformation {
+		display: flex;
+		width: 90%;
+		height: 55%;
+		background: black;
+		color: white;
+		font-family: sans-serif;
+		justify-content: center;
+		align-items: center;
+		line-height: 1.5;
+		font-size: calc(5px + 2vh);
+		text-align: center;
+		padding-top: 2%
+	}
+
+	.contactForm {
+		width: 90%;
+		height: 90%;
+		background: black;
+		overflow-y: hidden;
+		overflow-x: hidden;
+		padding-bottom: 4%
+	}
+	
+}
+
+/*
+@media only screen and (max-width: 978px) {
+	.fcf-form-control {
+		font-size: calc(4pt + 1vh);
+	}
+	
+	.contactInformation {
+		font-size: calc(2px + 2vh);
+	}
+
+	#cefs {
+		font-size: calc(5px + 2.4vh);
+	}
+	
+	
+	.fcf-body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 0;
+		font-family: sans-serif;
+		font-size: calc(5px + 1.5vh);
+		font-weight: 400;
+		line-height: 1.5;
+		color: white;
+		text-align: left;
+		background-color: black;
+		padding: 0 0px 0 0px;
+		padding-bottom: 0px;
+		min-width: 80px;
+		max-width: 100%;
+		height: 100%;
+	}
+	
+	.fcf-btn {
+		display: inline-block;
+		font-weight: 400;
+		color: white;
+		text-align: center;
+		vertical-align: middle;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		background-color: purple;
+		border: 1px solid transparent;
+		padding: 0.375rem 0.75rem;
+		font-size: calc(8px + 1vh);
+		line-height: 1.5;
+		border-radius: 0.25rem;
+		transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	}
+	
+	.fcf-credit {
+		font-size: calc(3px + 1vh);
+		color: #545b62;
+	}
+} */
