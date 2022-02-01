@@ -242,15 +242,15 @@ main p {
 	border-bottom: 1px solid white;
 }
 
-[class ^= "side-"]:not(.side-overview):hover {
+[class ^= "side-"]:not(.side-impacts):hover {
 	background: rgba(200, 200, 255);
 }
 
-.side-dogs {
+.side-impacts {
 	padding-bottom: 5%;
 }
 
-.side-overview {
+.side-impacts {
 	padding-top: 5%;
 	border-top: 1px solid white;
 	background: rgba(100, 0, 100, 1)
@@ -265,7 +265,7 @@ main p {
 	font-stretch: expanded;
 }
 
-[class ^= "side-"]:not(.side-overview):hover a {
+[class ^= "side-"]:not(.side-impacts):hover a {
 	color: black;
 }
 
@@ -326,14 +326,6 @@ main p {
   display: none;
 }
 
-.summary p:first-child {
-	color: white;
-	text-align: left;
-	font-family: sans-serif;
-	line-height: 200%;
-	margin: 30px 3% 2% 3%;
-}
-
 .summary p {
 	color: white;
 	text-align: left;
@@ -341,6 +333,14 @@ main p {
 	font-size: calc(12px + 1vw);
 	line-height: 200%;
 	margin: 2% 3%;
+}
+
+.summary p:first-child {
+	color: white;
+	text-align: left;
+	font-family: sans-serif;
+	line-height: 200%;
+	padding: 30px 3% 2% 3%;
 }
 
 .summary p:last-child {

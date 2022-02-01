@@ -242,15 +242,15 @@ main p {
 	border-bottom: 1px solid white;
 }
 
-[class ^= "side-"]:not(.side-overview):hover {
+[class ^= "side-"]:not(.side-merits):hover {
 	background: rgba(200, 200, 255);
 }
 
-.side-dogs {
+.side-impacts {
 	padding-bottom: 5%;
 }
 
-.side-overview {
+.side-merits {
 	padding-top: 5%;
 	border-top: 1px solid white;
 	background: rgba(100, 0, 100, 1)
@@ -265,7 +265,7 @@ main p {
 	font-stretch: expanded;
 }
 
-[class ^= "side-"]:not(.side-overview):hover a {
+[class ^= "side-"]:not(.side-merits):hover a {
 	color: black;
 }
 
@@ -345,6 +345,24 @@ main p {
 
 .summary p:last-child {
 	margin: 2% 3% 60px 3%;
+}
+
+.summary ol li {
+	list-style-type: decimal;
+	color: white;
+	font-family: sans-serif;
+	font-size: calc(10px + 1vw);
+	line-height: 200%;
+	margin: 0 7% 5% 7%;
+}
+
+.summary ol li:last-child {
+	list-style-type: decimal;
+	color: white;
+	font-family: sans-serif;
+	font-size: calc(10px + 1vw);
+	line-height: 200%;
+	margin: 0 7% 0% 7%;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
