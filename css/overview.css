@@ -242,7 +242,7 @@ main p {
 	border-bottom: 1px solid white;
 }
 
-[class ^= "side-"]:not(.side-elephants):hover {
+[class ^= "side-"]:not(.side-overview):hover {
 	background: rgba(200, 200, 255);
 }
 
@@ -250,7 +250,7 @@ main p {
 	padding-bottom: 5%;
 }
 
-.side-elephants {
+.side-overview {
 	padding-top: 5%;
 	border-top: 1px solid white;
 	background: rgba(100, 0, 100, 1)
@@ -265,7 +265,7 @@ main p {
 	font-stretch: expanded;
 }
 
-[class ^= "side-"]:not(.side-elephants):hover a {
+[class ^= "side-"]:not(.side-overview):hover a {
 	color: black;
 }
 
